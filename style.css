@@ -1,0 +1,78 @@
+body {
+    background: rgb(206, 206, 206);
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(32, 32, 32);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+#img-header {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+}
+
+nav.menu-principal {
+  background-color: #ffffff; /* Cor de fundo da faixa (um cinza escuro) */
+  padding: 10px 0;        /* Espaçamento interno em cima e embaixo */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra sutil para dar profundidade */
+}
+
+nav.menu-principal ul {
+  list-style-type: none;  /* Remove os pontos da lista */
+  margin: 0;              /* Remove a margem padrão */
+  padding: 0;             /* Remove o padding padrão */
+  display: flex;          /* <<< A MÁGICA ACONTECE AQUI */
+  justify-content: center; /* Centraliza os itens do menu na faixa */
+}
+
+nav.menu-principal a {
+  display: block;          /* Faz o link ocupar todo o espaço do 'pai' (li) */
+  color: rgb(0, 0, 0);            /* Cor do texto */
+  text-decoration: none;   /* Remove o sublinhado */
+  padding: 15px 20px;      /* Espaçamento interno para criar botões maiores */
+  font-family: Arial, sans-serif; /* Fonte mais limpa */
+  text-transform: uppercase; /* Deixa o texto em maiúsculas */
+  font-size: 14px;         /* Tamanho da fonte */
+  transition: background-color 0.3s ease; /* Efeito suave na transição */
+}
+
+nav.menu-principal a:hover {
+  background-color: #555; /* Muda a cor de fundo ao passar o mouse */
+  border-radius: 5px;      /* Bordas levemente arredondadas no hover */
+}
+
+.sobre-a-praia {
+  display: flex; /* Ativa o layout flexível */
+  gap: 20px;     /* Cria um espaço de 20px entre as colunas */
+}
+
+.sobre-a-praia p {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: rgb(32, 32, 32);
+    margin: 0; /* Remove a margem padrão */
+  flex: 1; /* Faz com que cada parágrafo (coluna) ocupe o mesmo espaço */
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
